@@ -1,0 +1,1148 @@
+2026-05-19 18:48:08  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 18:48:08  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 18:48:08  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 18:48:08  INFO: Character encoding: UTF-8
+2026-05-19 18:48:08  INFO: Version: 6.13.3
+2026-05-19 18:48:08  INFO: Starting server...
+2026-05-19 18:48:08  INFO: HikariPool-1 - Starting...
+2026-05-19 18:48:08  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-05-19 18:48:08  INFO: HikariPool-1 - Start completed.
+2026-05-19 18:48:09  INFO: Set default schema name to PUBLIC
+2026-05-19 18:48:09  INFO: Creating snapshot
+2026-05-19 18:48:09  INFO: Successfully acquired change log lock
+2026-05-19 18:48:09  INFO: Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-05-19 18:48:09  INFO: Clearing database change log checksums for database h2
+2026-05-19 18:48:09  INFO: Successfully released change log lock
+2026-05-19 18:48:09  INFO: Command execution complete
+2026-05-19 18:48:09  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 18:48:10  INFO: Successfully acquired change log lock
+2026-05-19 18:48:10  INFO: Using deploymentId: 9234488940
+2026-05-19 18:48:10  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 18:48:10  INFO: Table tc_attributes created
+2026-05-19 18:48:10  INFO: Table tc_calendars created
+2026-05-19 18:48:10  INFO: Table tc_commands created
+2026-05-19 18:48:10  INFO: Table tc_device_attribute created
+2026-05-19 18:48:10  INFO: Table tc_device_command created
+2026-05-19 18:48:10  INFO: Table tc_device_driver created
+2026-05-19 18:48:10  INFO: Table tc_device_geofence created
+2026-05-19 18:48:10  INFO: Table tc_device_maintenance created
+2026-05-19 18:48:10  INFO: Table tc_device_notification created
+2026-05-19 18:48:10  INFO: Table tc_devices created
+2026-05-19 18:48:10  INFO: Table tc_drivers created
+2026-05-19 18:48:10  INFO: Table tc_events created
+2026-05-19 18:48:10  INFO: Table tc_geofences created
+2026-05-19 18:48:10  INFO: Table tc_group_attribute created
+2026-05-19 18:48:10  INFO: Table tc_group_command created
+2026-05-19 18:48:10  INFO: Table tc_group_driver created
+2026-05-19 18:48:10  INFO: Table tc_group_geofence created
+2026-05-19 18:48:10  INFO: Table tc_group_maintenance created
+2026-05-19 18:48:10  INFO: Table tc_group_notification created
+2026-05-19 18:48:10  INFO: Table tc_groups created
+2026-05-19 18:48:10  INFO: Table tc_maintenances created
+2026-05-19 18:48:10  INFO: Table tc_notifications created
+2026-05-19 18:48:10  INFO: Table tc_positions created
+2026-05-19 18:48:10  INFO: Table tc_servers created
+2026-05-19 18:48:10  INFO: Table tc_statistics created
+2026-05-19 18:48:10  INFO: Table tc_user_attribute created
+2026-05-19 18:48:10  INFO: Table tc_user_calendar created
+2026-05-19 18:48:10  INFO: Table tc_user_command created
+2026-05-19 18:48:10  INFO: Table tc_user_device created
+2026-05-19 18:48:10  INFO: Table tc_user_driver created
+2026-05-19 18:48:10  INFO: Table tc_user_geofence created
+2026-05-19 18:48:10  INFO: Table tc_user_group created
+2026-05-19 18:48:10  INFO: Table tc_user_maintenance created
+2026-05-19 18:48:10  INFO: Table tc_user_notification created
+2026-05-19 18:48:10  INFO: Table tc_user_user created
+2026-05-19 18:48:10  INFO: Table tc_users created
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_command (commandid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_devices (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_events (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_command (commandid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_command (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_positions (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_command (commandid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_command (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_device (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_driver (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_group (groupid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_group (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_notification (userid)
+2026-05-19 18:48:10  INFO: Foreign key constraint added to tc_user_user (userid)
+2026-05-19 18:48:10  INFO: New row inserted into tc_servers
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 243ms
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_groups (groupid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 3ms
+2026-05-19 18:48:11  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2026-05-19 18:48:11  INFO: Creating snapshot
+2026-05-19 18:48:11  INFO: Index user_device_user_id created
+2026-05-19 18:48:11  INFO: Index position_deviceid_fixtime created
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 40ms
+2026-05-19 18:48:11  INFO: Index event_deviceid_servertime created
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 1ms
+2026-05-19 18:48:11  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 25ms
+2026-05-19 18:48:11  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 4ms
+2026-05-19 18:48:11  INFO: Column tc_events.servertime renamed to eventtime
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 5ms
+2026-05-19 18:48:11  INFO: Table tc_orders created
+2026-05-19 18:48:11  INFO: Table tc_user_order created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_user_order (userid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_user_order (orderid)
+2026-05-19 18:48:11  INFO: Table tc_group_order created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_group_order (groupid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_group_order (orderid)
+2026-05-19 18:48:11  INFO: Table tc_device_order created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_order (orderid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 19ms
+2026-05-19 18:48:11  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2026-05-19 18:48:11  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2026-05-19 18:48:11  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2026-05-19 18:48:11  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2026-05-19 18:48:11  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2026-05-19 18:48:11  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 23ms
+2026-05-19 18:48:11  INFO: Index idx_drivers_uniqueid created
+2026-05-19 18:48:11  INFO: Index idx_devices_uniqueid created
+2026-05-19 18:48:11  INFO: Index idx_users_email created
+2026-05-19 18:48:11  INFO: Index idx_users_login created
+2026-05-19 18:48:11  INFO: Index idx_users_token created
+2026-05-19 18:48:11  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 6ms
+2026-05-19 18:48:11  INFO: Columns status(CHAR(8)) added to tc_devices
+2026-05-19 18:48:11  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 16ms
+2026-05-19 18:48:11  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2026-05-19 18:48:11  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2026-05-19 18:48:11  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2026-05-19 18:48:11  INFO: Table tc_keystore created
+2026-05-19 18:48:11  INFO: Index idx_users_token dropped from table tc_users
+2026-05-19 18:48:11  INFO: Column tc_users.token dropped
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 27ms
+2026-05-19 18:48:11  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2026-05-19 18:48:11  INFO: Table tc_commands_queue created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2026-05-19 18:48:11  INFO: Index idx_commands_queue_deviceid created
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 41ms
+2026-05-19 18:48:11  INFO: Column tc_commands_queue.description dropped
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 3ms
+2026-05-19 18:48:11  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2026-05-19 18:48:11  INFO: Table tc_reports created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_reports (calendarid)
+2026-05-19 18:48:11  INFO: Table tc_user_report created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_user_report (userid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_user_report (reportid)
+2026-05-19 18:48:11  INFO: Table tc_group_report created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_group_report (groupid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_group_report (reportid)
+2026-05-19 18:48:11  INFO: Table tc_device_report created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_report (reportid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 16ms
+2026-05-19 18:48:11  INFO: Columns commandid(INT) added to tc_notifications
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_notifications (commandid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 7ms
+2026-05-19 18:48:11  INFO: Column tc_devices.geofenceids dropped
+2026-05-19 18:48:11  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 15ms
+2026-05-19 18:48:11  INFO: Columns calendarid(INT) added to tc_devices
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_devices (calendarid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 10ms
+2026-05-19 18:48:11  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 6ms
+2026-05-19 18:48:11  INFO: Columns temporary(BOOLEAN) added to tc_users
+2026-05-19 18:48:11  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 5ms
+2026-05-19 18:48:11  INFO: Column tc_servers.twelvehourformat dropped
+2026-05-19 18:48:11  INFO: Column tc_users.twelvehourformat dropped
+2026-05-19 18:48:11  INFO: Columns priority(INT) added to tc_attributes
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 17ms
+2026-05-19 18:48:11  INFO: Creating snapshot
+2026-05-19 18:48:11  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2026-05-19 18:48:11  INFO: Foreign key fk_events_deviceid dropped
+2026-05-19 18:48:11  INFO: Foreign key fk_positions_deviceid dropped
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 14ms
+2026-05-19 18:48:11  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 5ms
+2026-05-19 18:48:11  INFO: Creating snapshot
+2026-05-19 18:48:11  INFO: Table tc_actions created
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 25ms
+2026-05-19 18:48:11  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-19 18:48:11  INFO: Columns motionpositionid(INT) added to tc_devices
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 9ms
+2026-05-19 18:48:11  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-19 18:48:11  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : Not precondition failed
+
+2026-05-19 18:48:11  INFO: Table tc_revoked_tokens created
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 1ms
+2026-05-19 18:48:11  INFO: Columns motionlatitude(DOUBLE),motionlongitude(DOUBLE) added to tc_devices
+2026-05-19 18:48:11  INFO: Table tc_device_device created
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_device (deviceid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0::author ran successfully in 12ms
+2026-05-19 18:48:11  INFO: Creating snapshot
+2026-05-19 18:48:11  INFO: Foreign key constraint added to tc_device_device (linkeddeviceid)
+2026-05-19 18:48:11  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0-fk-linkeddeviceid::author ran successfully in 5ms
+2026-05-19 18:48:11  INFO: UPDATE SUMMARY
+2026-05-19 18:48:11  INFO: Run:                         33
+2026-05-19 18:48:11  INFO: Previously run:               0
+2026-05-19 18:48:11  INFO: Filtered out:                 1
+2026-05-19 18:48:11  INFO: -------------------------------
+2026-05-19 18:48:11  INFO: Total change sets:           34
+2026-05-19 18:48:11  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 18:48:11  INFO: DBMS mismatch:                1
+2026-05-19 18:48:11  INFO: Update summary generated
+2026-05-19 18:48:11  INFO: Update command completed successfully.
+2026-05-19 18:48:11  INFO: Successfully released change log lock
+2026-05-19 18:48:11  INFO: Command execution complete
+2026-05-19 18:48:12  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 18:48:13 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:15:00  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:15:00  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:15:00  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:15:00  INFO: Character encoding: UTF-8
+2026-05-19 19:15:00  INFO: Version: 6.13.3
+2026-05-19 19:15:00  INFO: Starting server...
+2026-05-19 19:15:00  INFO: HikariPool-1 - Starting...
+2026-05-19 19:15:01  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-05-19 19:15:01  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:15:01  INFO: Set default schema name to PUBLIC
+2026-05-19 19:15:01  INFO: Successfully acquired change log lock
+2026-05-19 19:15:01  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:15:01  INFO: Successfully released change log lock
+2026-05-19 19:15:01  INFO: Command execution complete
+2026-05-19 19:15:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:02  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:02  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:02  INFO: UPDATE SUMMARY
+2026-05-19 19:15:02  INFO: Run:                          0
+2026-05-19 19:15:02  INFO: Previously run:              33
+2026-05-19 19:15:02  INFO: Filtered out:                 1
+2026-05-19 19:15:02  INFO: -------------------------------
+2026-05-19 19:15:02  INFO: Total change sets:           34
+2026-05-19 19:15:02  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:15:02  INFO: DBMS mismatch:                1
+2026-05-19 19:15:02  INFO: Update summary generated
+2026-05-19 19:15:02  INFO: Command execution complete
+2026-05-19 19:15:03  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:15:04 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:15:27  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:15:27  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:15:27  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:15:27  INFO: Character encoding: UTF-8
+2026-05-19 19:15:27  INFO: Version: 6.13.3
+2026-05-19 19:15:27  INFO: Starting server...
+2026-05-19 19:15:27  INFO: HikariPool-1 - Starting...
+2026-05-19 19:15:28  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-05-19 19:15:28  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:15:28  INFO: Set default schema name to PUBLIC
+2026-05-19 19:15:28  INFO: Successfully acquired change log lock
+2026-05-19 19:15:28  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:15:28  INFO: Successfully released change log lock
+2026-05-19 19:15:28  INFO: Command execution complete
+2026-05-19 19:15:29  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:29  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:29  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:15:29  INFO: UPDATE SUMMARY
+2026-05-19 19:15:29  INFO: Run:                          0
+2026-05-19 19:15:29  INFO: Previously run:              33
+2026-05-19 19:15:29  INFO: Filtered out:                 1
+2026-05-19 19:15:29  INFO: -------------------------------
+2026-05-19 19:15:29  INFO: Total change sets:           34
+2026-05-19 19:15:29  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:15:29  INFO: DBMS mismatch:                1
+2026-05-19 19:15:29  INFO: Update summary generated
+2026-05-19 19:15:29  INFO: Command execution complete
+2026-05-19 19:15:30  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:15:31 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:22:59  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:22:59  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:22:59  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:22:59  INFO: Character encoding: UTF-8
+2026-05-19 19:22:59  INFO: Version: 6.13.3
+2026-05-19 19:22:59  INFO: Starting server...
+2026-05-19 19:22:59  INFO: HikariPool-1 - Starting...
+2026-05-19 19:22:59  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-05-19 19:22:59  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:23:00  INFO: Set default schema name to PUBLIC
+2026-05-19 19:23:00  INFO: Successfully acquired change log lock
+2026-05-19 19:23:00  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:23:00  INFO: Successfully released change log lock
+2026-05-19 19:23:00  INFO: Command execution complete
+2026-05-19 19:23:00  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:23:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:23:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:23:01  INFO: UPDATE SUMMARY
+2026-05-19 19:23:01  INFO: Run:                          0
+2026-05-19 19:23:01  INFO: Previously run:              33
+2026-05-19 19:23:01  INFO: Filtered out:                 1
+2026-05-19 19:23:01  INFO: -------------------------------
+2026-05-19 19:23:01  INFO: Total change sets:           34
+2026-05-19 19:23:01  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:23:01  INFO: DBMS mismatch:                1
+2026-05-19 19:23:01  INFO: Update summary generated
+2026-05-19 19:23:01  INFO: Command execution complete
+2026-05-19 19:23:02  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:23:03 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:25:56  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:25:56  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:25:56  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:25:56  INFO: Character encoding: UTF-8
+2026-05-19 19:25:56  INFO: Version: 6.13.3
+2026-05-19 19:25:56  INFO: Starting server...
+2026-05-19 19:25:56  INFO: HikariPool-1 - Starting...
+2026-05-19 19:25:56  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:25:56  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:25:56  INFO: Set default schema name to PUBLIC
+2026-05-19 19:25:57  INFO: Creating snapshot
+2026-05-19 19:25:57  INFO: Successfully acquired change log lock
+2026-05-19 19:25:57  INFO: Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-05-19 19:25:57  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:25:57  INFO: Successfully released change log lock
+2026-05-19 19:25:57  INFO: Command execution complete
+2026-05-19 19:25:57  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:25:58  INFO: Successfully acquired change log lock
+2026-05-19 19:25:58  INFO: Using deploymentId: 9236756822
+2026-05-19 19:25:58  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:25:59  INFO: Table tc_attributes created
+2026-05-19 19:25:59  INFO: Table tc_calendars created
+2026-05-19 19:25:59  INFO: Table tc_commands created
+2026-05-19 19:25:59  INFO: Table tc_device_attribute created
+2026-05-19 19:25:59  INFO: Table tc_device_command created
+2026-05-19 19:25:59  INFO: Table tc_device_driver created
+2026-05-19 19:25:59  INFO: Table tc_device_geofence created
+2026-05-19 19:25:59  INFO: Table tc_device_maintenance created
+2026-05-19 19:25:59  INFO: Table tc_device_notification created
+2026-05-19 19:25:59  INFO: Table tc_devices created
+2026-05-19 19:25:59  INFO: Table tc_drivers created
+2026-05-19 19:25:59  INFO: Table tc_events created
+2026-05-19 19:25:59  INFO: Table tc_geofences created
+2026-05-19 19:25:59  INFO: Table tc_group_attribute created
+2026-05-19 19:25:59  INFO: Table tc_group_command created
+2026-05-19 19:25:59  INFO: Table tc_group_driver created
+2026-05-19 19:25:59  INFO: Table tc_group_geofence created
+2026-05-19 19:25:59  INFO: Table tc_group_maintenance created
+2026-05-19 19:25:59  INFO: Table tc_group_notification created
+2026-05-19 19:25:59  INFO: Table tc_groups created
+2026-05-19 19:25:59  INFO: Table tc_maintenances created
+2026-05-19 19:25:59  INFO: Table tc_notifications created
+2026-05-19 19:25:59  INFO: Table tc_positions created
+2026-05-19 19:25:59  INFO: Table tc_servers created
+2026-05-19 19:25:59  INFO: Table tc_statistics created
+2026-05-19 19:25:59  INFO: Table tc_user_attribute created
+2026-05-19 19:25:59  INFO: Table tc_user_calendar created
+2026-05-19 19:25:59  INFO: Table tc_user_command created
+2026-05-19 19:25:59  INFO: Table tc_user_device created
+2026-05-19 19:25:59  INFO: Table tc_user_driver created
+2026-05-19 19:25:59  INFO: Table tc_user_geofence created
+2026-05-19 19:25:59  INFO: Table tc_user_group created
+2026-05-19 19:25:59  INFO: Table tc_user_maintenance created
+2026-05-19 19:25:59  INFO: Table tc_user_notification created
+2026-05-19 19:25:59  INFO: Table tc_user_user created
+2026-05-19 19:25:59  INFO: Table tc_users created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_command (commandid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_devices (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_events (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_command (commandid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_command (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_positions (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_command (commandid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_command (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_device (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_driver (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_group (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_group (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_notification (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_user (userid)
+2026-05-19 19:25:59  INFO: New row inserted into tc_servers
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 303ms
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_groups (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 5ms
+2026-05-19 19:25:59  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2026-05-19 19:25:59  INFO: Creating snapshot
+2026-05-19 19:25:59  INFO: Index user_device_user_id created
+2026-05-19 19:25:59  INFO: Index position_deviceid_fixtime created
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 45ms
+2026-05-19 19:25:59  INFO: Index event_deviceid_servertime created
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 2ms
+2026-05-19 19:25:59  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 21ms
+2026-05-19 19:25:59  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 8ms
+2026-05-19 19:25:59  INFO: Column tc_events.servertime renamed to eventtime
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 4ms
+2026-05-19 19:25:59  INFO: Table tc_orders created
+2026-05-19 19:25:59  INFO: Table tc_user_order created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_order (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_order (orderid)
+2026-05-19 19:25:59  INFO: Table tc_group_order created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_order (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_order (orderid)
+2026-05-19 19:25:59  INFO: Table tc_device_order created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_order (orderid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 37ms
+2026-05-19 19:25:59  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2026-05-19 19:25:59  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2026-05-19 19:25:59  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2026-05-19 19:25:59  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2026-05-19 19:25:59  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2026-05-19 19:25:59  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 40ms
+2026-05-19 19:25:59  INFO: Index idx_drivers_uniqueid created
+2026-05-19 19:25:59  INFO: Index idx_devices_uniqueid created
+2026-05-19 19:25:59  INFO: Index idx_users_email created
+2026-05-19 19:25:59  INFO: Index idx_users_login created
+2026-05-19 19:25:59  INFO: Index idx_users_token created
+2026-05-19 19:25:59  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 15ms
+2026-05-19 19:25:59  INFO: Columns status(CHAR(8)) added to tc_devices
+2026-05-19 19:25:59  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 29ms
+2026-05-19 19:25:59  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2026-05-19 19:25:59  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2026-05-19 19:25:59  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2026-05-19 19:25:59  INFO: Table tc_keystore created
+2026-05-19 19:25:59  INFO: Index idx_users_token dropped from table tc_users
+2026-05-19 19:25:59  INFO: Column tc_users.token dropped
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 40ms
+2026-05-19 19:25:59  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2026-05-19 19:25:59  INFO: Table tc_commands_queue created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2026-05-19 19:25:59  INFO: Index idx_commands_queue_deviceid created
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 53ms
+2026-05-19 19:25:59  INFO: Column tc_commands_queue.description dropped
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 3ms
+2026-05-19 19:25:59  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2026-05-19 19:25:59  INFO: Table tc_reports created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_reports (calendarid)
+2026-05-19 19:25:59  INFO: Table tc_user_report created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_report (userid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_user_report (reportid)
+2026-05-19 19:25:59  INFO: Table tc_group_report created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_report (groupid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_group_report (reportid)
+2026-05-19 19:25:59  INFO: Table tc_device_report created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_report (reportid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 35ms
+2026-05-19 19:25:59  INFO: Columns commandid(INT) added to tc_notifications
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_notifications (commandid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 7ms
+2026-05-19 19:25:59  INFO: Column tc_devices.geofenceids dropped
+2026-05-19 19:25:59  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 10ms
+2026-05-19 19:25:59  INFO: Columns calendarid(INT) added to tc_devices
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_devices (calendarid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 10ms
+2026-05-19 19:25:59  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 9ms
+2026-05-19 19:25:59  INFO: Columns temporary(BOOLEAN) added to tc_users
+2026-05-19 19:25:59  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 8ms
+2026-05-19 19:25:59  INFO: Column tc_servers.twelvehourformat dropped
+2026-05-19 19:25:59  INFO: Column tc_users.twelvehourformat dropped
+2026-05-19 19:25:59  INFO: Columns priority(INT) added to tc_attributes
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 23ms
+2026-05-19 19:25:59  INFO: Creating snapshot
+2026-05-19 19:25:59  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2026-05-19 19:25:59  INFO: Foreign key fk_events_deviceid dropped
+2026-05-19 19:25:59  INFO: Foreign key fk_positions_deviceid dropped
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 15ms
+2026-05-19 19:25:59  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 4ms
+2026-05-19 19:25:59  INFO: Creating snapshot
+2026-05-19 19:25:59  INFO: Table tc_actions created
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 32ms
+2026-05-19 19:25:59  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-19 19:25:59  INFO: Columns motionpositionid(INT) added to tc_devices
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 5ms
+2026-05-19 19:25:59  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-19 19:25:59  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          changelog-master.xml : Not precondition failed
+
+2026-05-19 19:25:59  INFO: Table tc_revoked_tokens created
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 2ms
+2026-05-19 19:25:59  INFO: Columns motionlatitude(DOUBLE),motionlongitude(DOUBLE) added to tc_devices
+2026-05-19 19:25:59  INFO: Table tc_device_device created
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_device (deviceid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0::author ran successfully in 18ms
+2026-05-19 19:25:59  INFO: Creating snapshot
+2026-05-19 19:25:59  INFO: Foreign key constraint added to tc_device_device (linkeddeviceid)
+2026-05-19 19:25:59  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0-fk-linkeddeviceid::author ran successfully in 9ms
+2026-05-19 19:25:59  INFO: UPDATE SUMMARY
+2026-05-19 19:25:59  INFO: Run:                         33
+2026-05-19 19:25:59  INFO: Previously run:               0
+2026-05-19 19:25:59  INFO: Filtered out:                 1
+2026-05-19 19:25:59  INFO: -------------------------------
+2026-05-19 19:25:59  INFO: Total change sets:           34
+2026-05-19 19:25:59  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:25:59  INFO: DBMS mismatch:                1
+2026-05-19 19:25:59  INFO: Update summary generated
+2026-05-19 19:26:00  INFO: Update command completed successfully.
+2026-05-19 19:26:00  INFO: Successfully released change log lock
+2026-05-19 19:26:00  INFO: Command execution complete
+2026-05-19 19:26:01  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:26:01  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:26:01 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:27:22  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:27:22  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:27:22  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:27:22  INFO: Character encoding: UTF-8
+2026-05-19 19:27:22  INFO: Version: 6.13.3
+2026-05-19 19:27:22  INFO: Starting server...
+2026-05-19 19:27:22  INFO: HikariPool-1 - Starting...
+2026-05-19 19:27:22  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:27:22  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:27:22  INFO: Set default schema name to PUBLIC
+2026-05-19 19:27:23  INFO: Successfully acquired change log lock
+2026-05-19 19:27:23  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:27:23  INFO: Successfully released change log lock
+2026-05-19 19:27:23  INFO: Command execution complete
+2026-05-19 19:27:23  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:24  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:24  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:24  INFO: UPDATE SUMMARY
+2026-05-19 19:27:24  INFO: Run:                          0
+2026-05-19 19:27:24  INFO: Previously run:              33
+2026-05-19 19:27:24  INFO: Filtered out:                 1
+2026-05-19 19:27:24  INFO: -------------------------------
+2026-05-19 19:27:24  INFO: Total change sets:           34
+2026-05-19 19:27:24  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:27:24  INFO: DBMS mismatch:                1
+2026-05-19 19:27:24  INFO: Update summary generated
+2026-05-19 19:27:24  INFO: Command execution complete
+2026-05-19 19:27:25 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:27:38  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:27:38  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:27:38  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:27:38  INFO: Character encoding: UTF-8
+2026-05-19 19:27:38  INFO: Version: 6.13.3
+2026-05-19 19:27:38  INFO: Starting server...
+2026-05-19 19:27:38  INFO: HikariPool-1 - Starting...
+2026-05-19 19:27:38  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:27:38  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:27:38  INFO: Set default schema name to PUBLIC
+2026-05-19 19:27:38  INFO: Successfully acquired change log lock
+2026-05-19 19:27:38  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:27:38  INFO: Successfully released change log lock
+2026-05-19 19:27:38  INFO: Command execution complete
+2026-05-19 19:27:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:27:40  INFO: UPDATE SUMMARY
+2026-05-19 19:27:40  INFO: Run:                          0
+2026-05-19 19:27:40  INFO: Previously run:              33
+2026-05-19 19:27:40  INFO: Filtered out:                 1
+2026-05-19 19:27:40  INFO: -------------------------------
+2026-05-19 19:27:40  INFO: Total change sets:           34
+2026-05-19 19:27:40  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:27:40  INFO: DBMS mismatch:                1
+2026-05-19 19:27:40  INFO: Update summary generated
+2026-05-19 19:27:40  INFO: Command execution complete
+2026-05-19 19:27:40 ERROR: Main method error - C:\Users\User\Desktop\Proyectos\GitHub\traccar_bk_demo\web - NoSuchFileException (... < WebServer:135 < *:99 < MainModule:207 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2026-05-19 19:31:28  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:31:28  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:31:28  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:31:28  INFO: Character encoding: UTF-8
+2026-05-19 19:31:28  INFO: Version: 6.13.3
+2026-05-19 19:31:28  INFO: Starting server...
+2026-05-19 19:31:28  INFO: HikariPool-1 - Starting...
+2026-05-19 19:31:28  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:31:28  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:31:29  INFO: Set default schema name to PUBLIC
+2026-05-19 19:31:29  INFO: Successfully acquired change log lock
+2026-05-19 19:31:29  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:31:29  INFO: Successfully released change log lock
+2026-05-19 19:31:29  INFO: Command execution complete
+2026-05-19 19:31:29  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:30  INFO: UPDATE SUMMARY
+2026-05-19 19:31:30  INFO: Run:                          0
+2026-05-19 19:31:30  INFO: Previously run:              33
+2026-05-19 19:31:30  INFO: Filtered out:                 1
+2026-05-19 19:31:30  INFO: -------------------------------
+2026-05-19 19:31:30  INFO: Total change sets:           34
+2026-05-19 19:31:30  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:31:30  INFO: DBMS mismatch:                1
+2026-05-19 19:31:30  INFO: Update summary generated
+2026-05-19 19:31:30  INFO: Command execution complete
+2026-05-19 19:31:31  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:31:31  INFO: Session workerName=node0
+2026-05-19 19:31:31  INFO: Started oeje10s.ServletContextHandler@7254838{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39374689{STARTED}}
+2026-05-19 19:31:32  INFO: Started oeje10s.ServletContextHandler@7254838{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39374689{STARTED}}
+2026-05-19 19:31:32  INFO: Started oejs.ServerConnector@64fc6470{HTTP/1.1, (http/1.1)}{0.0.0.0:8089}
+2026-05-19 19:31:32  INFO: Started oejs.Server@5cf3a7f9{STARTING}[12.1.8,sto=0] @817ms
+2026-05-19 19:31:45  INFO: Stopping server...
+2026-05-19 19:31:54  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:31:54  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:31:54  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:31:54  INFO: Character encoding: UTF-8
+2026-05-19 19:31:54  INFO: Version: 6.13.3
+2026-05-19 19:31:54  INFO: Starting server...
+2026-05-19 19:31:54  INFO: HikariPool-1 - Starting...
+2026-05-19 19:31:54  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:31:54  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:31:54  INFO: Set default schema name to PUBLIC
+2026-05-19 19:31:54  INFO: Successfully acquired change log lock
+2026-05-19 19:31:55  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:31:55  INFO: Successfully released change log lock
+2026-05-19 19:31:55  INFO: Command execution complete
+2026-05-19 19:31:55  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:31:56  INFO: UPDATE SUMMARY
+2026-05-19 19:31:56  INFO: Run:                          0
+2026-05-19 19:31:56  INFO: Previously run:              33
+2026-05-19 19:31:56  INFO: Filtered out:                 1
+2026-05-19 19:31:56  INFO: -------------------------------
+2026-05-19 19:31:56  INFO: Total change sets:           34
+2026-05-19 19:31:56  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:31:56  INFO: DBMS mismatch:                1
+2026-05-19 19:31:56  INFO: Update summary generated
+2026-05-19 19:31:56  INFO: Command execution complete
+2026-05-19 19:31:57  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:31:57  INFO: Session workerName=node0
+2026-05-19 19:31:57  INFO: Started oeje10s.ServletContextHandler@39374689{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@2e204155{STARTED}}
+2026-05-19 19:31:58  INFO: Started oeje10s.ServletContextHandler@39374689{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@2e204155{STARTED}}
+2026-05-19 19:31:58  INFO: Started oejs.ServerConnector@5cf3a7f9{HTTP/1.1, (http/1.1)}{0.0.0.0:8089}
+2026-05-19 19:31:58  INFO: Started oejs.Server@42db955e{STARTING}[12.1.8,sto=0] @1015ms
+2026-05-19 19:44:38  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:44:38  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:44:38  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:44:38  INFO: Character encoding: UTF-8
+2026-05-19 19:44:38  INFO: Version: 6.13.3
+2026-05-19 19:44:38  INFO: Starting server...
+2026-05-19 19:44:38  INFO: HikariPool-1 - Starting...
+2026-05-19 19:44:38  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:44:38  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:44:38  INFO: Set default schema name to PUBLIC
+2026-05-19 19:44:39  INFO: Successfully acquired change log lock
+2026-05-19 19:44:39  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:44:39  INFO: Successfully released change log lock
+2026-05-19 19:44:39  INFO: Command execution complete
+2026-05-19 19:44:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:44:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:44:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:44:40  INFO: UPDATE SUMMARY
+2026-05-19 19:44:40  INFO: Run:                          0
+2026-05-19 19:44:40  INFO: Previously run:              33
+2026-05-19 19:44:40  INFO: Filtered out:                 1
+2026-05-19 19:44:40  INFO: -------------------------------
+2026-05-19 19:44:40  INFO: Total change sets:           34
+2026-05-19 19:44:40  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:44:40  INFO: DBMS mismatch:                1
+2026-05-19 19:44:40  INFO: Update summary generated
+2026-05-19 19:44:40  INFO: Command execution complete
+2026-05-19 19:44:41  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:44:41  INFO: Session workerName=node0
+2026-05-19 19:44:41  INFO: Started oeje10s.ServletContextHandler@13234ac9{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7254838{STARTED}}
+2026-05-19 19:44:42  INFO: Started oeje10s.ServletContextHandler@13234ac9{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7254838{STARTED}}
+2026-05-19 19:44:42  INFO: Started oejs.ServerConnector@538f45f1{HTTP/1.1, (http/1.1)}{0.0.0.0:8089}
+2026-05-19 19:44:42  INFO: Started oejs.Server@64fc6470{STARTING}[12.1.8,sto=0] @945ms
+2026-05-19 19:46:43  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:46:43  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:46:43  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:46:43  INFO: Character encoding: UTF-8
+2026-05-19 19:46:43  INFO: Version: 6.13.3
+2026-05-19 19:46:43  INFO: Starting server...
+2026-05-19 19:46:43  INFO: HikariPool-1 - Starting...
+2026-05-19 19:46:43  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:46:43  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:46:44  INFO: Set default schema name to PUBLIC
+2026-05-19 19:46:44  INFO: Successfully acquired change log lock
+2026-05-19 19:46:44  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:46:44  INFO: Successfully released change log lock
+2026-05-19 19:46:44  INFO: Command execution complete
+2026-05-19 19:46:44  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:46:45  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:46:45  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:46:45  INFO: UPDATE SUMMARY
+2026-05-19 19:46:45  INFO: Run:                          0
+2026-05-19 19:46:45  INFO: Previously run:              33
+2026-05-19 19:46:45  INFO: Filtered out:                 1
+2026-05-19 19:46:45  INFO: -------------------------------
+2026-05-19 19:46:45  INFO: Total change sets:           34
+2026-05-19 19:46:45  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:46:45  INFO: DBMS mismatch:                1
+2026-05-19 19:46:45  INFO: Update summary generated
+2026-05-19 19:46:45  INFO: Command execution complete
+2026-05-19 19:46:46  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:46:46  INFO: Session workerName=node0
+2026-05-19 19:46:46  INFO: Started oeje10s.ServletContextHandler@7254838{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39374689{STARTED}}
+2026-05-19 19:46:47  INFO: Started oeje10s.ServletContextHandler@7254838{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39374689{STARTED}}
+2026-05-19 19:46:47  INFO: Started oejs.ServerConnector@43cbafa6{HTTP/1.1, (http/1.1)}{0.0.0.0:8089}
+2026-05-19 19:46:47  INFO: Started oejs.Server@538f45f1{STARTING}[12.1.8,sto=0] @899ms
+2026-05-19 19:49:48  INFO: Stopping server...
+2026-05-19 19:49:50  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:49:50  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:49:50  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:49:50  INFO: Character encoding: UTF-8
+2026-05-19 19:49:50  INFO: Version: 6.13.3
+2026-05-19 19:49:50  INFO: Starting server...
+2026-05-19 19:49:50  INFO: HikariPool-1 - Starting...
+2026-05-19 19:49:51  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:49:51  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:49:51  INFO: Set default schema name to PUBLIC
+2026-05-19 19:49:51  INFO: Successfully acquired change log lock
+2026-05-19 19:49:51  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:49:51  INFO: Successfully released change log lock
+2026-05-19 19:49:51  INFO: Command execution complete
+2026-05-19 19:49:52  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:49:52  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:49:52  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:49:52  INFO: UPDATE SUMMARY
+2026-05-19 19:49:52  INFO: Run:                          0
+2026-05-19 19:49:52  INFO: Previously run:              33
+2026-05-19 19:49:52  INFO: Filtered out:                 1
+2026-05-19 19:49:52  INFO: -------------------------------
+2026-05-19 19:49:52  INFO: Total change sets:           34
+2026-05-19 19:49:52  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:49:52  INFO: DBMS mismatch:                1
+2026-05-19 19:49:52  INFO: Update summary generated
+2026-05-19 19:49:52  INFO: Command execution complete
+2026-05-19 19:49:53  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:49:54  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:49:54  INFO: Session workerName=node0
+2026-05-19 19:49:54  INFO: Started oeje10s.ServletContextHandler@36e3321e{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@218f2f51{STARTED}}
+2026-05-19 19:49:55  INFO: Started oeje10s.ServletContextHandler@36e3321e{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@218f2f51{STARTED}}
+2026-05-19 19:49:55  INFO: Started oejs.ServerConnector@7db2b614{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-19 19:49:55  INFO: Started oejs.Server@34d5eac{STARTING}[12.1.8,sto=0] @873ms
+2026-05-19 19:50:06  INFO: Stopping server...
+2026-05-19 19:50:11  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-19 19:50:11  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-19 19:50:11  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-19 19:50:11  INFO: Character encoding: UTF-8
+2026-05-19 19:50:11  INFO: Version: 6.13.3
+2026-05-19 19:50:11  INFO: Starting server...
+2026-05-19 19:50:11  INFO: HikariPool-1 - Starting...
+2026-05-19 19:50:11  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-19 19:50:11  INFO: HikariPool-1 - Start completed.
+2026-05-19 19:50:12  INFO: Set default schema name to PUBLIC
+2026-05-19 19:50:12  INFO: Successfully acquired change log lock
+2026-05-19 19:50:12  INFO: Clearing database change log checksums for database h2
+2026-05-19 19:50:12  INFO: Successfully released change log lock
+2026-05-19 19:50:12  INFO: Command execution complete
+2026-05-19 19:50:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:50:13  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:50:13  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-19 19:50:13  INFO: UPDATE SUMMARY
+2026-05-19 19:50:13  INFO: Run:                          0
+2026-05-19 19:50:13  INFO: Previously run:              33
+2026-05-19 19:50:13  INFO: Filtered out:                 1
+2026-05-19 19:50:13  INFO: -------------------------------
+2026-05-19 19:50:13  INFO: Total change sets:           34
+2026-05-19 19:50:13  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-19 19:50:13  INFO: DBMS mismatch:                1
+2026-05-19 19:50:13  INFO: Update summary generated
+2026-05-19 19:50:13  INFO: Command execution complete
+2026-05-19 19:50:14  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-19 19:50:14  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-19 19:50:15  INFO: Session workerName=node0
+2026-05-19 19:50:15  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-19 19:50:15  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-19 19:50:15  INFO: Started oejs.ServerConnector@6b32b678{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-19 19:50:15  INFO: Started oejs.Server@1b6683c4{STARTING}[12.1.8,sto=0] @737ms
+2026-05-19 19:51:04  INFO: [Te9a3cfac] connected
+2026-05-19 19:51:04  INFO: [T13e225d2] connected
+2026-05-19 19:51:04  INFO: [Te9a3cfac: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-19 19:51:04  INFO: [Te9a3cfac: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 19:53:32  INFO: [T13e225d2] disconnected
+2026-05-19 19:59:00  INFO: [Te9a3cfac] disconnected
+2026-05-19 19:59:58  INFO: [T03d74375] connected
+2026-05-19 19:59:58  INFO: [T03d74375: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-19 19:59:58  INFO: [T03d74375: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 19:59:58  INFO: [Tb58a0aaf] connected
+2026-05-19 20:01:12  INFO: [Ta9bb7a38] connected
+2026-05-19 20:01:12  INFO: [Tac7f213e] connected
+2026-05-19 20:01:12  INFO: [Ta9bb7a38: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.51.1\r\nAccept: */*\r\nPostman-Token: bb87199e-1b6b-44d2-a324-413dcec9c4b9\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-19 20:01:12  INFO: [Tac7f213e] disconnected
+2026-05-19 20:01:12  INFO: [Ta9bb7a38: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:02:20  INFO: [Ta9bb7a38: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=1716151400 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.51.1\r\nAccept: */*\r\nPostman-Token: 9fd5af4a-23b7-441e-93e2-90b383f874c8\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-19 20:02:20  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-19 20:02:20  INFO: [Ta9bb7a38: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:02:33  INFO: [T03d74375: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=1716151400 HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-19 20:02:33  INFO: [Tb58a0aaf] disconnected
+2026-05-19 20:02:33  INFO: [Tef2864b9] connected
+2026-05-19 20:02:33  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-19 20:02:33  INFO: [T03d74375: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:02:36  INFO: [T03d74375: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=1716151400 HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-19 20:02:36  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-19 20:02:36  INFO: [T03d74375: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:03:24  INFO: [Tf256edc6] connected
+2026-05-19 20:03:24  INFO: [T1fa586fe] connected
+2026-05-19 20:03:24  INFO: [Tf256edc6: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-19%2020:00:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.51.1\r\nAccept: */*\r\nPostman-Token: c9c638bd-0fe1-46d3-b275-ecd2c05fb9b4\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-19 20:03:24  INFO: [T1fa586fe] disconnected
+2026-05-19 20:03:24  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-19 20:03:24  INFO: [Tf256edc6: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:03:34  INFO: [T03d74375: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-19%2020:00:00 HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-19 20:03:34  INFO: [Tef2864b9] disconnected
+2026-05-19 20:03:34  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-19 20:03:34  INFO: [T03d74375: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-19 20:03:34  INFO: [T2ea71c06] connected
+2026-05-19 20:04:24  INFO: [T03d74375] disconnected
+2026-05-19 20:04:24  INFO: [T2ea71c06] disconnected
+2026-05-19 20:32:15  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s240ms272µs200ns).
+2026-05-19 20:35:33  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m18s249ms774µs900ns).
+2026-05-20 14:14:29  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-20 14:14:29  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-20 14:14:29  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-20 14:14:29  INFO: Character encoding: UTF-8
+2026-05-20 14:14:29  INFO: Version: 6.13.3
+2026-05-20 14:14:29  INFO: Starting server...
+2026-05-20 14:14:29  INFO: HikariPool-1 - Starting...
+2026-05-20 14:14:30  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-20 14:14:30  INFO: HikariPool-1 - Start completed.
+2026-05-20 14:14:30  INFO: Set default schema name to PUBLIC
+2026-05-20 14:14:31  INFO: Successfully acquired change log lock
+2026-05-20 14:14:31  INFO: Clearing database change log checksums for database h2
+2026-05-20 14:14:31  INFO: Successfully released change log lock
+2026-05-20 14:14:31  INFO: Command execution complete
+2026-05-20 14:14:33  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:14:34  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:14:35  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:14:35  INFO: UPDATE SUMMARY
+2026-05-20 14:14:35  INFO: Run:                          0
+2026-05-20 14:14:35  INFO: Previously run:              33
+2026-05-20 14:14:35  INFO: Filtered out:                 1
+2026-05-20 14:14:35  INFO: -------------------------------
+2026-05-20 14:14:35  INFO: Total change sets:           34
+2026-05-20 14:14:35  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-20 14:14:35  INFO: DBMS mismatch:                1
+2026-05-20 14:14:35  INFO: Update summary generated
+2026-05-20 14:14:35  INFO: Command execution complete
+2026-05-20 14:14:37  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-20 14:14:39  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-20 14:14:39  INFO: Session workerName=node0
+2026-05-20 14:14:39  INFO: Started oeje10s.ServletContextHandler@1ff542a3{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@48ee3c2d{STARTED}}
+2026-05-20 14:14:41  INFO: Started oeje10s.ServletContextHandler@1ff542a3{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@48ee3c2d{STARTED}}
+2026-05-20 14:14:41  INFO: Started oejs.ServerConnector@161c9468{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-20 14:14:41  INFO: Started oejs.Server@629de8{STARTING}[12.1.8,sto=0] @2059ms
+2026-05-20 14:25:28  INFO: [T8415ba92] connected
+2026-05-20 14:25:28  INFO: [T0d70068c] connected
+2026-05-20 14:25:28  INFO: [T8415ba92: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: b6d5f164-0624-4e50-be48-9c1212cbec79\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:25:28  INFO: [T0d70068c] disconnected
+2026-05-20 14:25:28  INFO: [T8415ba92: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:26:05  INFO: Stopping server...
+2026-05-20 14:26:07  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-20 14:26:07  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-20 14:26:07  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-20 14:26:07  INFO: Character encoding: UTF-8
+2026-05-20 14:26:07  INFO: Version: 6.13.3
+2026-05-20 14:26:07  INFO: Starting server...
+2026-05-20 14:26:07  INFO: HikariPool-1 - Starting...
+2026-05-20 14:26:07  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-20 14:26:07  INFO: HikariPool-1 - Start completed.
+2026-05-20 14:26:07  INFO: Set default schema name to PUBLIC
+2026-05-20 14:26:08  INFO: Successfully acquired change log lock
+2026-05-20 14:26:08  INFO: Clearing database change log checksums for database h2
+2026-05-20 14:26:08  INFO: Successfully released change log lock
+2026-05-20 14:26:08  INFO: Command execution complete
+2026-05-20 14:26:08  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:09  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:09  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:09  INFO: UPDATE SUMMARY
+2026-05-20 14:26:09  INFO: Run:                          0
+2026-05-20 14:26:09  INFO: Previously run:              33
+2026-05-20 14:26:09  INFO: Filtered out:                 1
+2026-05-20 14:26:09  INFO: -------------------------------
+2026-05-20 14:26:09  INFO: Total change sets:           34
+2026-05-20 14:26:09  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-20 14:26:09  INFO: DBMS mismatch:                1
+2026-05-20 14:26:09  INFO: Update summary generated
+2026-05-20 14:26:09  INFO: Command execution complete
+2026-05-20 14:26:10  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-20 14:26:11  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-20 14:26:11  INFO: Session workerName=node0
+2026-05-20 14:26:11  INFO: Started oeje10s.ServletContextHandler@36e3321e{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@218f2f51{STARTED}}
+2026-05-20 14:26:11  INFO: Started oeje10s.ServletContextHandler@36e3321e{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@218f2f51{STARTED}}
+2026-05-20 14:26:11  INFO: Started oejs.ServerConnector@7db2b614{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-20 14:26:11  INFO: Started oejs.Server@34d5eac{STARTING}[12.1.8,sto=0] @791ms
+2026-05-20 14:26:21  INFO: Stopping server...
+2026-05-20 14:26:29  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-20 14:26:29  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-20 14:26:29  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-20 14:26:29  INFO: Character encoding: UTF-8
+2026-05-20 14:26:29  INFO: Version: 6.13.3
+2026-05-20 14:26:29  INFO: Starting server...
+2026-05-20 14:26:29  INFO: HikariPool-1 - Starting...
+2026-05-20 14:26:29  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-20 14:26:29  INFO: HikariPool-1 - Start completed.
+2026-05-20 14:26:29  INFO: Set default schema name to PUBLIC
+2026-05-20 14:26:30  INFO: Successfully acquired change log lock
+2026-05-20 14:26:30  INFO: Clearing database change log checksums for database h2
+2026-05-20 14:26:30  INFO: Successfully released change log lock
+2026-05-20 14:26:30  INFO: Command execution complete
+2026-05-20 14:26:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:31  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:31  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:26:31  INFO: UPDATE SUMMARY
+2026-05-20 14:26:31  INFO: Run:                          0
+2026-05-20 14:26:31  INFO: Previously run:              33
+2026-05-20 14:26:31  INFO: Filtered out:                 1
+2026-05-20 14:26:31  INFO: -------------------------------
+2026-05-20 14:26:31  INFO: Total change sets:           34
+2026-05-20 14:26:31  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-20 14:26:31  INFO: DBMS mismatch:                1
+2026-05-20 14:26:31  INFO: Update summary generated
+2026-05-20 14:26:31  INFO: Command execution complete
+2026-05-20 14:26:32  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-20 14:26:33  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-20 14:26:33  INFO: Session workerName=node0
+2026-05-20 14:26:33  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-20 14:26:33  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-20 14:26:33  INFO: Started oejs.ServerConnector@6b32b678{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-20 14:26:33  INFO: Started oejs.Server@1b6683c4{STARTING}[12.1.8,sto=0] @725ms
+2026-05-20 14:28:16  INFO: [Td834821f] connected
+2026-05-20 14:28:16  INFO: [Taafce538] connected
+2026-05-20 14:28:16  INFO: [Td834821f: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-20 14:28:16  INFO: [Td834821f: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:28:44  INFO: [Td834821f] disconnected
+2026-05-20 14:28:44  INFO: [Taafce538] disconnected
+2026-05-20 14:31:09  INFO: [T877670b7] connected
+2026-05-20 14:31:09  INFO: [T8da16463] connected
+2026-05-20 14:31:09  INFO: [T8da16463: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 9a17dc5f-2592-49d0-be4d-5f1bb0850022\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:31:09  INFO: [T877670b7] disconnected
+2026-05-20 14:31:09  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-20 14:31:09  INFO: [T8da16463: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:31:28  INFO: [T8da16463: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: ca1e8d87-af63-4ab5-a1bc-bec23a611321\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:31:28  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-20 14:31:28  INFO: [T8da16463: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:31:30  INFO: [T8da16463: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 77a42207-b100-4bd7-95f8-17e9bab76505\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:31:30  WARN: Unknown device - 9999 (0:0:0:0:0:0:0:1)
+2026-05-20 14:31:30  INFO: [T8da16463: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:34:03  INFO: Stopping server...
+2026-05-20 14:34:10  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-20 14:34:10  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-20 14:34:10  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-20 14:34:10  INFO: Character encoding: UTF-8
+2026-05-20 14:34:10  INFO: Version: 6.13.3
+2026-05-20 14:34:10  INFO: Starting server...
+2026-05-20 14:34:11  INFO: HikariPool-1 - Starting...
+2026-05-20 14:34:11  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-20 14:34:11  INFO: HikariPool-1 - Start completed.
+2026-05-20 14:34:11  INFO: Set default schema name to PUBLIC
+2026-05-20 14:34:11  INFO: Successfully acquired change log lock
+2026-05-20 14:34:11  INFO: Clearing database change log checksums for database h2
+2026-05-20 14:34:11  INFO: Successfully released change log lock
+2026-05-20 14:34:11  INFO: Command execution complete
+2026-05-20 14:34:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:34:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:34:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 14:34:12  INFO: UPDATE SUMMARY
+2026-05-20 14:34:12  INFO: Run:                          0
+2026-05-20 14:34:12  INFO: Previously run:              33
+2026-05-20 14:34:12  INFO: Filtered out:                 1
+2026-05-20 14:34:12  INFO: -------------------------------
+2026-05-20 14:34:12  INFO: Total change sets:           34
+2026-05-20 14:34:12  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-20 14:34:12  INFO: DBMS mismatch:                1
+2026-05-20 14:34:12  INFO: Update summary generated
+2026-05-20 14:34:12  INFO: Command execution complete
+2026-05-20 14:34:13  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-20 14:34:14  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-20 14:34:14  INFO: Session workerName=node0
+2026-05-20 14:34:14  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-20 14:34:14  INFO: Started oeje10s.ServletContextHandler@54387873{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@3a80c534{STARTED}}
+2026-05-20 14:34:15  INFO: Started oejs.ServerConnector@6b32b678{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-20 14:34:15  INFO: Started oejs.Server@1b6683c4{STARTING}[12.1.8,sto=0] @715ms
+2026-05-20 14:34:21  INFO: [Tdd30df3c] connected
+2026-05-20 14:34:21  INFO: [T81835b7f] connected
+2026-05-20 14:34:21  INFO: [T81835b7f: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: fc8f5fed-1460-49b9-b18c-8608775cf00c\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:34:21  INFO: [Tdd30df3c] disconnected
+2026-05-20 14:34:21  INFO: Automatically registered 9999
+2026-05-20 14:34:21  INFO: [T81835b7f: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 200 OK\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:34:21  INFO: Event id: 9999, time: 2026-05-20 14:34:21, type: deviceOnline, notifications: 0
+2026-05-20 14:34:24  INFO: [T81835b7f] id: 9999, time: 2026-05-20 14:30:00, lat: -0.22500, lon: -78.51200, course: 0.0
+2026-05-20 14:40:35  INFO: [Td4533cfc] connected
+2026-05-20 14:40:35  INFO: [T2aa0d181] connected
+2026-05-20 14:40:35  INFO: [T2aa0d181] disconnected
+2026-05-20 14:40:35  INFO: [Td4533cfc: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nAuthorization: Basic YWRtaW46YWRtaW4=\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 81e811bf-62b6-461c-8e46-bbc2a951d8be\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n
+2026-05-20 14:40:35  INFO: [Td4533cfc: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:44:21  INFO: Event id: 9999, time: 2026-05-20 14:44:21, type: deviceUnknown, notifications: 0
+2026-05-20 14:47:58  INFO: [T4f2b0de9] connected
+2026-05-20 14:47:58  INFO: [T6c164a77] connected
+2026-05-20 14:47:58  INFO: [T4f2b0de9: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nAuthorization: Basic YWRtaW46YWRtaW4=\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: b9b8a2ed-f130-4fcf-952e-f6dc0a794e7a\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 11\r\n\r\nadmin=admin
+2026-05-20 14:47:58  INFO: [T6c164a77] disconnected
+2026-05-20 14:47:58  INFO: [T4f2b0de9: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 14:52:13  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-20 15:21:51  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m9s711ms693µs600ns).
+2026-05-20 15:31:34  INFO: [T980c3744] connected
+2026-05-20 15:31:34  INFO: [Td4c2efa2] connected
+2026-05-20 15:31:34  INFO: [Td4c2efa2: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 5d67dcce-b7a8-4eca-8641-9cc5b6234e0b\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\n\r\n
+2026-05-20 15:31:34  INFO: [T980c3744] disconnected
+2026-05-20 15:31:34  WARN: [Td4c2efa2] error - Text '2026-05-20 14:30:0' could not be parsed at index 17 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:31:34  INFO: [Td4c2efa2] disconnected
+2026-05-20 15:31:43  INFO: [T5e065740] connected
+2026-05-20 15:31:43  INFO: [Te497283f] connected
+2026-05-20 15:31:43  INFO: [Te497283f: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 7f54b857-c504-449b-845d-a11af7959827\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\n\r\n
+2026-05-20 15:31:43  INFO: [T5e065740] disconnected
+2026-05-20 15:31:43  WARN: [Te497283f] error - Text '2026-05-20 14:30:0' could not be parsed at index 17 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:31:43  INFO: [Te497283f] disconnected
+2026-05-20 15:31:53  INFO: Stopping server...
+2026-05-20 15:32:00  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-20 15:32:00  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 21.0.11+9-LTS-211
+2026-05-20 15:32:00  INFO: Memory limit heap: 3974mb non-heap: 0mb
+2026-05-20 15:32:00  INFO: Character encoding: UTF-8
+2026-05-20 15:32:00  INFO: Version: 6.13.3
+2026-05-20 15:32:00  INFO: Starting server...
+2026-05-20 15:32:00  INFO: HikariPool-1 - Starting...
+2026-05-20 15:32:00  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./target/database user=SA
+2026-05-20 15:32:00  INFO: HikariPool-1 - Start completed.
+2026-05-20 15:32:00  INFO: Set default schema name to PUBLIC
+2026-05-20 15:32:01  INFO: Successfully acquired change log lock
+2026-05-20 15:32:01  INFO: Clearing database change log checksums for database h2
+2026-05-20 15:32:01  INFO: Successfully released change log lock
+2026-05-20 15:32:01  INFO: Command execution complete
+2026-05-20 15:32:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 15:32:02  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 15:32:02  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-20 15:32:02  INFO: UPDATE SUMMARY
+2026-05-20 15:32:02  INFO: Run:                          0
+2026-05-20 15:32:02  INFO: Previously run:              33
+2026-05-20 15:32:02  INFO: Filtered out:                 1
+2026-05-20 15:32:02  INFO: -------------------------------
+2026-05-20 15:32:02  INFO: Total change sets:           34
+2026-05-20 15:32:02  INFO: FILTERED CHANGE SETS SUMMARY
+2026-05-20 15:32:02  INFO: DBMS mismatch:                1
+2026-05-20 15:32:02  INFO: Update summary generated
+2026-05-20 15:32:02  INFO: Command execution complete
+2026-05-20 15:32:02  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-20 15:32:03  INFO: jetty-12.1.8; built: 2026-04-01T01:09:18.991Z; git: c9cdc9aaa434a3665b8a53b4d1cc3684992da649; jvm 21.0.11+9-LTS-211
+2026-05-20 15:32:03  INFO: Session workerName=node0
+2026-05-20 15:32:03  INFO: Started oeje10s.ServletContextHandler@1d9af731{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39afe59f{STARTED}}
+2026-05-20 15:32:03  INFO: Started oeje10s.ServletContextHandler@1d9af731{ROOT,/,b=file:///C:/Users/User/Desktop/Proyectos/GitHub/traccar_bk_demo/web/,a=AVAILABLE,h=oeje10s.SessionHandler@39afe59f{STARTED}}
+2026-05-20 15:32:03  INFO: Started oejs.ServerConnector@2c1a95a2{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2026-05-20 15:32:03  INFO: Started oejs.Server@1adf387e{STARTING}[12.1.8,sto=0] @583ms
+2026-05-20 15:37:18  INFO: [Te3c9bd7b] connected
+2026-05-20 15:37:18  INFO: [T5ea17963] connected
+2026-05-20 15:37:19  INFO: [T5ea17963: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 76faf381-1faa-40c2-b7f7-ebce8a1e998d\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\n\r\n
+2026-05-20 15:37:19  INFO: [Te3c9bd7b] disconnected
+2026-05-20 15:37:19  WARN: [T5ea17963] error - Text '2026-05-20 14:30:0' could not be parsed at index 17 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:37:19  INFO: [T5ea17963] disconnected
+2026-05-20 15:37:48  INFO: [T8e5c7bb5] connected
+2026-05-20 15:37:48  INFO: [T6dd7e9a3] connected
+2026-05-20 15:37:48  INFO: [T8e5c7bb5] disconnected
+2026-05-20 15:37:48  INFO: [T6dd7e9a3: osmand < 0:0:0:0:0:0:0:1] GET /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%202014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 53cca731-474b-439a-bee7-456b780fbe0b\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\n\r\n
+2026-05-20 15:37:48  WARN: [T6dd7e9a3] error - Text '2026-05-20 2014:30:0' could not be parsed at index 13 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:37:48  INFO: [T6dd7e9a3] disconnected
+2026-05-20 15:38:21  INFO: [T9621df3d] connected
+2026-05-20 15:38:21  INFO: [T9621df3d: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-20 15:38:21  INFO: [T328f4981] connected
+2026-05-20 15:38:21  INFO: [T9621df3d: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 15:38:22  INFO: [T9621df3d: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-20 15:38:22  INFO: [T9621df3d: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 15:38:33  INFO: [T9621df3d: osmand < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:6060\r\nConnection: keep-alive\r\nsec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"\r\nsec-ch-ua-mobile: ?0\r\nsec-ch-ua-platform: "Windows"\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\nSec-Fetch-Site: none\r\nSec-Fetch-Mode: navigate\r\nSec-Fetch-User: ?1\r\nSec-Fetch-Dest: document\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: es-419,es;q=0.9\r\n\r\n
+2026-05-20 15:38:33  INFO: [T9621df3d: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 400 Bad Request\r\ncontent-length: 0\r\n\r\n
+2026-05-20 15:38:57  INFO: [Tccce12c8] connected
+2026-05-20 15:38:57  INFO: [T1955544b] connected
+2026-05-20 15:38:57  INFO: [Tccce12c8] disconnected
+2026-05-20 15:38:57  INFO: [T1955544b: osmand < 0:0:0:0:0:0:0:1] POST /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%202014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 2ce1b918-a149-433e-876f-0305e7bc429c\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\nContent-Length: 0\r\n\r\n
+2026-05-20 15:38:57  WARN: [T1955544b] error - Text '2026-05-20 2014:30:0' could not be parsed at index 13 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:38:57  INFO: [T1955544b] disconnected
+2026-05-20 15:39:07  INFO: [T9e598438] connected
+2026-05-20 15:39:07  INFO: [T89f88a50] connected
+2026-05-20 15:39:07  INFO: [T89f88a50: osmand < 0:0:0:0:0:0:0:1] POST /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:0 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: e1c71303-bd3a-48a3-bd1f-43acd6597534\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\nContent-Length: 0\r\n\r\n
+2026-05-20 15:39:07  INFO: [T9e598438] disconnected
+2026-05-20 15:39:07  WARN: [T89f88a50] error - Text '2026-05-20 14:30:0' could not be parsed at index 17 - DateTimeParseException (... < DateUtil:69 < OsmAndProtocolDecoder:124 < *:72 < ExtendedObjectDecoder:73 < ... < WrapperContext:102 < ...)
+2026-05-20 15:39:07  INFO: [T89f88a50] disconnected
+2026-05-20 15:39:27  INFO: [T328f4981] disconnected
+2026-05-20 15:40:03  INFO: [Tb7586da8] connected
+2026-05-20 15:40:03  INFO: [T03a05b1c] connected
+2026-05-20 15:40:03  INFO: [Tb7586da8] disconnected
+2026-05-20 15:40:03  INFO: [T03a05b1c: osmand < 0:0:0:0:0:0:0:1] POST /?id=9999&lat=-0.225&lon=-78.512&timestamp=2026-05-20%2014:30:00 HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.53.0\r\nAccept: */*\r\nPostman-Token: 64f94382-2ff5-42a1-b339-4a399f4b57f0\r\nHost: localhost:6060\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nCookie: JSESSIONID=node025691sindmzqznvfxxbzprgp1.node0\r\nContent-Length: 0\r\n\r\n
+2026-05-20 15:40:03  INFO: [T03a05b1c: osmand > 0:0:0:0:0:0:0:1] HTTP/1.1 200 OK\r\ncontent-length: 0\r\n\r\n
+2026-05-20 15:40:03  INFO: Event id: 9999, time: 2026-05-20 15:40:03, type: deviceOnline, notifications: 0
+2026-05-20 15:40:06  INFO: [T03a05b1c] id: 9999, time: 2026-05-20 14:30:00, lat: -0.22500, lon: -78.51200, course: 0.0
+2026-05-20 15:46:06  INFO: [T9621df3d] disconnected
+2026-05-20 15:50:03  INFO: Event id: 9999, time: 2026-05-20 15:50:03, type: deviceUnknown, notifications: 0
+2026-05-20 16:48:31  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m29s783ms67µs).
+2026-05-20 19:16:23  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s792ms599µs100ns).
+2026-05-20 19:49:43  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m19s698ms232µs600ns).
+2026-05-20 20:37:46  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m1s741ms997µs500ns).
